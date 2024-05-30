@@ -106,99 +106,99 @@ body {
 }
 
 h1 {
-  font-family: var(--font-sans);
-  font-weight: 600;
   font-size: var(--h1-size);
 }
 
 h2 {
-  font-family: var(--font-sans);
-  font-weight: 500;
   font-size: var(--h2-size);
 }
 
 h3 {
-  font-family: var(--font-sans);
-  font-weight: 500;
   font-size: var(--h3-size);
 }
 
 h4 {
-  font-family: var(--font-sans);
-  font-weight: 400;
   font-size: var(--h4-size);
 }
 
 h5 {
-  font-family: var(--font-sans);
-  font-weight: 400;
   font-size: var(--h5-size);
 }
 
 h6 {
-  font-family: var(--font-sans);
-  font-weight: 400;
   font-size: var(--h6-size);  
 }
 
-.btn-1 {
-  font-family: var(--font-sans);
+h1, h2 {
   font-weight: 600;
-  font-size: var(--btn-1-size);
-  padding: var(--padding-l);
-  border-radius: var(--border-r-2);
+}
+
+h3, h4 {
+  font-weight: 500;
+}
+
+h5, h6 {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6,
+.btn-1, .btn-2, .btn-3,
+.btn-4, .btn-5, .btn-6 {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+}
+
+.btn-1, .btn-2, .btn-3,
+.btn-4, .btn-5, .btn-6 {
   border: none;
+}
+
+.btn-1,
+.btn-2 {
+  font-weight: 600;
+  padding: var(--padding-l);
+  border-radius: var(--border-r-1);
   margin: var(--margin-l);
+}
+
+.btn-1 {
+  font-size: var(--btn-1-size);
 }
 
 .btn-2 {
-  font-family: var(--font-sans);
-  font-weight: 500;
   font-size: var(--btn-2-size);
-  padding: var(--padding-l);
+}
+
+.btn-3,
+.btn-4 {
+  font-weight: 500;
+  padding: var(--padding-m);
   border-radius: var(--border-r-2);
-  border: none;
-  margin: var(--margin-l);
+  margin: var(--margin-m);
 }
 
 .btn-3 {
-  font-family: var(--font-sans);
-  font-weight: 500;
   font-size: var(--btn-3-size);
-  padding: var(--padding-l);
-  border-radius: var(--border-r-3);
-  border: none;
-  margin: var(--margin-m);
 }
 
 .btn-4 {
-  font-family: var(--font-sans);
-  font-weight: 400;
   font-size: var(--btn-4-size);
-  padding: var(--padding-m);
+}
+
+.btn-5,
+.btn-6 {
+  font-weight: 400;
+  padding: var(--padding-s);
   border-radius: var(--border-r-3);
-  border: none;
-  margin: var(--margin-m);
+  margin: var(--margin-s);
 }
 
 .btn-5 {
-  font-family: var(--font-sans);
-  font-weight: 400;
   font-size: var(--btn-5-size);
-  padding: var(--padding-s);
-  border-radius: var(--border-r-3);
-  border: none;
-  margin: var(--margin-s);
 }
 
 .btn-6 {
-  font-family: var(--font-sans);
-  font-weight: 400;
   font-size: var(--btn-6-size);
-  padding: var(--padding-s);
-  border-radius: var(--border-r-3);
-  border: none;
-  margin: var(--margin-s);
 }
 
 .btn-dark {
