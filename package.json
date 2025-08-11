@@ -1,19 +1,29 @@
 {
   "name": "hackman",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Pacman clone",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nimira43/Leonardo-CSS.git"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Nick Rabone",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Nimira43/Leonardo-CSS/issues"
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/plugin-transform-runtime": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@parcel/transformer-raw": "^2.15.4",
+    "parcel": "^2.10.0"
   },
-  "homepage": "https://github.com/Nimira43/Leonardo-CSS#readme",
-  "description": ""
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.0"
+  }
 }
