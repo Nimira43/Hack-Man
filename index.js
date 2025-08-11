@@ -17,3 +17,8 @@ let timer = null
 let gameWin = false
 let powerPillActive = false
 let powerPillTimer = null
+
+function playAudio(audio) {
+  const soundEffect = new Audio(audio)
+  soundEffect.play()
+}
