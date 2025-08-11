@@ -11,6 +11,9 @@ body {
     rgba(0, 0, 0, 0.1)),
     url('./images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
