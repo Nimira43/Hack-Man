@@ -23,3 +23,17 @@ export const directions = {
     rotation: 90
   },
 }
+
+export const objectType = {
+  blank: 'blank',
+  wall: 'wall',
+  dot: 'dot',
+  neville: 'neville',
+  gertie: 'gertie',
+  brash: 'brash',
+  frank: 'frank',
+  pill: 'pill',
+  hackman: 'hackman',
+  ghost: 'ghost',
+  ghostLair: 'lair'
+}
