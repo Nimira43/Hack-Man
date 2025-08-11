@@ -22,3 +22,10 @@ function playAudio(audio) {
   const soundEffect = new Audio(audio)
   soundEffect.play()
 }
+
+
+function startGame() {
+  playAudio(soundGameStart)
+}
+
+startButton.addEventListener('click', startGame)
