@@ -1,3 +1,5 @@
+import { gridSize, cellSize, objectType, classList } from './setup'
+
 class GameBoard {
   constructor(DOMGrid) {
 
