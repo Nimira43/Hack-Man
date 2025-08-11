@@ -18,6 +18,14 @@
   --theme-dark-dark: #000000;
 }
 
+/* temp blue bg for light buttons*/
+.blue-bg {
+  background-color: blue;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+/* end */
+
 .btn {
   display: inline-block;
   font-family: var(--main-font);
