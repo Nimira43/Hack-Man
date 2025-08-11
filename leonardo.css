@@ -48,33 +48,40 @@ body {
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
   border: 2px solid transparent;
 }
 
-.btn-solid {
+/* temp blue bg for light buttons*/
+.blue-bg {
+  background-color: blue;
+  padding: 1em;
+}
+/* end */
+
+.btn-solid-light {
+  color: var(--dark);
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+.btn-solid-light:hover {
+  background-color: var(--grey-5);
+  border-color: var(--grey-5);
+}
+
+
+.btn-outline-light {
   color: var(--white);
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-
-.btn-solid:hover {
-  background-color: var(--primary-dark);
-  border-color: var(--primary-dark);
-}
-
-
-.btn-outline {
-  color: var(--primary);
   background-color: transparent;
-  border-color: var(--primary);
+  border-color: var(--white);
 }
 
-.btn-outline:hover {
-  color: var(--white);
-  background-color: var(--primary);
-  border-color: var(--primary);
+.btn-outline-light:hover {
+  color: var(--dark);
+  background-color: var(--white);
+  border-color: var(--white);
 }
 
 .btn-solid-primary {
