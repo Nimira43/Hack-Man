@@ -1,4 +1,8 @@
 import { directions, objectType } from './setup'
 
 export function randomMovement(position, direction, objectExist) {
+  let dir = direction
+  let nextMovePos = position + dir.movement
+  const keys = Object.keys(directions)
+
 }
