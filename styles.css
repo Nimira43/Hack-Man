@@ -28,6 +28,18 @@ body {
   background: #000;
 }
 
+.square {
+  display: block;
+}
+
+.blank {
+  background: #000;
+}
+
+.wall {
+  border: 1px solid #ffd700;
+}
+
 
 /* Characters */
 
