@@ -14,7 +14,7 @@ const startButton = document.querySelector('#start-btn')
 const powerPillTime = 10000
 const globalSpeed = 80
 
-// const gameBoard
+const gameBoard = GameBoard.createGameBoard(gameGrid, level)
 
 let score = 0
 let timer = null
@@ -36,6 +36,7 @@ function gameLoop() {}
 
 function startGame() {
   playAudio(soundGameStart)
+  gameBoard.createGrid(level)
 }
 
 startButton.addEventListener('click', startGame)
