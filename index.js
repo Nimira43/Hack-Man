@@ -7,7 +7,7 @@ import soundDot from './sounds/eat.wav'
 import soundPill from './sounds/pill.wav'
 import startIntro from './sounds/intro-dark.mp3'
 import soundGameOver from './sounds/death.wav'
-import soundGhost from './sounds/eat-ghost.wav'
+import soundGhost from './sounds/eat-ghost.mp3'
 const gameGrid = document.querySelector('#game')
 const scoreTable = document.querySelector('#score')
 const startButton = document.querySelector('#start-btn')
