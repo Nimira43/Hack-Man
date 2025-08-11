@@ -8,13 +8,24 @@ class GameBoard {
   }
 
   showGameStatus(gameWin) {}
-  createGrid(level) {}
+
+  createGrid(level) {
+    this.dotCount = 0
+    this.grid = []
+    this.DOMGrid.innerHTML = ''
+    this.DOMGrid.style.cssText = `
+      grid-template-columns: repeat(${gridSize}, ${cellSize}px)
+    `
+
+    
+  }
+
   addObject(pos, classes) {}
   removeObject(pos, classes) {}
   objectExists(pos, object) {}
   rotateDiv(pos, deg) {}
   moveCharacter(character) {}
-  
+
   static createGameBoard(DOMGrid, level) {
     const board = new this(DOMGrid)
     board.createGrid(level)
