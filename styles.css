@@ -23,4 +23,30 @@
 
 .hackman {
   background-color: #ff4500;
+  border: none;
+  border-radius: 50%;
+  clip-path: polygon(
+    0, 0,
+    20px, 0,
+    20px -5px,
+    8px 10px,
+    20px 25px,
+    20px 20px,
+    0 20px
+  )
 }
+
+@keyframes gobble {
+  50% {
+    clip-path: polygon(
+      0, 0,
+      20px, 0,
+      20px 10px,
+      8px 10px,
+      20px 10px,
+      20px 20px,
+      0 20px
+    );
+  }
+}
+
