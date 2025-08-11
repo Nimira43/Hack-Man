@@ -39,6 +39,19 @@ export const objectType = {
   ghostLair: 'lair'
 }
 
+export const classList = [
+  objectType.blank,
+  objectType.wall,
+  objectType.dot,
+  objectType.neville,
+  objectType.gertie,
+  objectType.brash,
+  objectType.frank,
+  objectType.pill,
+  objectType.hackman,
+  objectType.ghostLair,
+]
+
 export const level = [
   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
   1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1,
