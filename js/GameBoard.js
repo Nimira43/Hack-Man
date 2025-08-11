@@ -20,6 +20,13 @@ class GameBoard {
     level.forEach((square) => {
       const div = document.createElement('div')
       div.classList.add('sqaure', classesList[square])
+      div.style.cssText = `
+        width: ${cellSize}px; height: ${cellSize}px;
+      `
+      this.DOMGrid.appendChild(div)
+      this.grid.push(div)
+
+      if (classesList[square] === objectType.dot) this.dotCount++
     })
 
   }
