@@ -1,4 +1,8 @@
 import { level, objectType } from './js/setup'
+import GameBoard from './js/GameBoard'
+import Hackman from './js/Hackman'
+import Ghost from './js/Ghost'
+import { randomMovement } from './js/ghostMovements'
 import soundDot from './sounds/eat.wav'
 import soundPill from './sounds/pill.wav'
 import soundGameStart from './sounds/start-game.wav'
