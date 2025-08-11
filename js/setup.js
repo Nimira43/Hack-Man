@@ -39,7 +39,7 @@ export const objectType = {
   ghostLair: 'lair'
 }
 
-export const classList = [
+export const classesList = [
   objectType.blank,
   objectType.wall,
   objectType.dot,

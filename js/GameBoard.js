@@ -1,4 +1,4 @@
-import { gridSize, cellSize, objectType, classList } from './setup'
+import { gridSize, cellSize, objectType, classesList } from './setup'
 
 class GameBoard {
   constructor(DOMGrid) {
@@ -17,7 +17,11 @@ class GameBoard {
       grid-template-columns: repeat(${gridSize}, ${cellSize}px)
     `
 
-    
+    level.forEach((square) => {
+      const div = document.createElement('div')
+      div.classList.add('sqaure', classesList[square])
+    })
+
   }
 
   addObject(pos, classes) {}
