@@ -5,6 +5,7 @@ import Ghost from './js/Ghost'
 import { randomMovement } from './js/ghostMovements'
 import soundDot from './sounds/eat.wav'
 import soundPill from './sounds/pill.wav'
+import startIntro from './sounds/intro-dark.mp3'
 import soundGameStart from './sounds/start-game.wav'
 import soundGameOver from './sounds/death.wav'
 import soundGhost from './sounds/eat-ghost.wav'
@@ -35,7 +36,7 @@ function checkCollision() {}
 function gameLoop() {}
 
 function startGame() {
-  playAudio(soundGameStart)
+  playAudio(startIntro)
   gameBoard.createGrid(level)
 }
 
