@@ -35,5 +35,6 @@ export const objectType = {
   pill: 'pill',
   hackman: 'hackman',
   ghost: 'ghost',
+  alerted: 'alerted',
   ghostLair: 'lair'
 }
