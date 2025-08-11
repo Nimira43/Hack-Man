@@ -8,13 +8,18 @@ class GameBoard {
   }
 
   showGameStatus(gameWin) {}
-  createLevel(level) {}
+  createGrid(level) {}
   addObject(pos, classes) {}
   removeObject(pos, classes) {}
   objectExists(pos, object) {}
   rotateDiv(pos, deg) {}
   moveCharacter(character) {}
-  static createGameBoard(DOMGrid, level) {}
+  
+  static createGameBoard(DOMGrid, level) {
+    const board = new this(DOMGrid)
+    board.createGrid(level)
+    return board
+  }
 }
 
 export default GameBoard
