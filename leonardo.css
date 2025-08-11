@@ -1,36 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --primary: #0000ff;             /* needs work */
-  --primary-dark: #00008b;        /* needs work */
-  --primary-light: #add8e6;       /* needs work */
-  --secondary: #ffff00;           /* needs work */
-  --secondary-dark: #daa520;      /* needs work */
-  --secondary-light: #ffffe0;     
-  --success: #008000;             /* needs work */
-  --success-dark: #006400;        /* needs work */
-  --success-light: #90ee90;         
-  --danger: #ff0000;              /* needs work */
-  --danger-dark: #8b0000;         /* needs work */
-  --danger-light: #ffc0cb;        /* needs work */
-  --special: #ff4500;             
-  --special-dark: #bb3403;        /* needs work */
-  --special-light: #f69c7c;       /* needs work */
+  --main-font: 'Poppins', sans-serif;
+  --primary: #1e3a8a;
+  --primary-dark: #1e2a6b;
+  --primary-light: #93c5fd;
+  --secondary: #facc15;
+  --secondary-dark: #b58900;
+  --secondary-light: #fef9c3;   
+  --success: #22c55e;
+  --success-dark: #166534;
+  --success-light: #bbf7d0;    
+  --danger: #ef4444;
+  --danger-dark: #991b1b;
+  --danger-light: #fecaca;
+  --special: #ff4500;
+  --special-dark: #bb3403;
+  --special-light: #f69c7c;
   --black: #000;            
   --white: #fff;
   --dark: #111;
   --light: #fffcfa;
   
-  /* 
-    Need a better palette of greys with better names.
-    Should be 8 variants 
-    However must keep #333, #ccc and #eee and work them into 
-    the 8 variants somehow
-  */
- 
-  --grey-dark: #333;
-  --grey-medium: #999;
-  --grey-light: #ccc;
-  --grey-light-extra: #eee;
-
+  --grey-1: #1a1a1a;
+  --grey-2: #333;       
+  --grey-3: #666;
+  --grey-4: #999;
+  --grey-5: #ccc;       
+  --grey-6: #ddd;
+  --grey-7: #eee;     
+  --grey-8: #f5f5f5;
 }
+
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--grey-2);
+  background-color: var(--light);
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--main-font);
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.btn-solid {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-solid:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+
+.btn-outline {
+  color: var(--primary);
+  background-color: transparent;
+  border-color: var(--primary);
+}
+
+.btn-outline:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-solid-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-solid-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+
+.btn-outline-primary {
+  color: var(--primary);
+  background-color: transparent;
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-solid-secondary {
+  color: var(--white);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-solid-secondary:hover {
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+}
+
+
+.btn-outline-secondary {
+  color: var(--secondary);
+  background-color: transparent;
+  border-color: var(--secondary);
+}
+
+.btn-outline-secondary:hover {
+  color: var(--white);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-solid-success {
+  color: var(--white);
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.btn-solid-success:hover {
+  background-color: var(--success-dark);
+  border-color: var(--success-dark);
+}
+
+
+.btn-outline-success {
+  color: var(--success);
+  background-color: transparent;
+  border-color: var(--success);
+}
+
+.btn-outline-success:hover {
+  color: var(--white);
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.btn-solid-danger {
+  background-color: var(--danger);
+  border-color: var(--danger);
+  color: var(--white);
+}
+
+.btn-solid-danger:hover {
+  background-color: var(--danger-dark);
+  border-color: var(--danger-dark);
+}
+
+.btn-outline-danger {
+  color: var(--danger);
+  border-color: var(--danger);
+  background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.btn-solid-special {
+  background-color: var(--special);
+  border-color: var(--special);
+  color: var(--white);
+}
+
+.btn-solid-special:hover {
+  background-color: var(--special-dark);
+  border-color: var(--special-dark);
+}
+
+.btn-outline-special {
+  color: var(--special);
+  border-color: var(--special);
+  background-color: transparent;
+}
+
+.btn-outline-special:hover {
+  background-color: var(--special);
+  color: var(--white);
+}
+
+.btn-solid-dark {
+  background-color: var(--dark);
+  border-color: var(--dark);
+  color: var(--white);
+}
+
+.btn-solid-dark:hover {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.btn-outline-dark {
+  color: var(--dark);
+  border-color: var(--dark);
+  background-color: transparent;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+
