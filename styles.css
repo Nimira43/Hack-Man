@@ -1,3 +1,26 @@
 * {
   font-family: 'VT323', monospace;
 }
+
+
+/* Characters */
+
+.neville {
+  background-color: #5b0404;
+}
+
+.gertie {
+  background-color: #9e6871;
+}
+
+.brash {
+  background-color: #57ff57;
+}
+
+.frank {
+  background-color:#056161
+}
+
+.hackman {
+  background-color: #ff4500;
+}
