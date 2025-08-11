@@ -1,3 +1,5 @@
+import { objectType, directions } from './setup'
+
 class Hackman {
   constructor(speed, startPos) {
 
