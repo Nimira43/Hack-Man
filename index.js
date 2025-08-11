@@ -23,6 +23,12 @@ function playAudio(audio) {
   soundEffect.play()
 }
 
+function gameOver() {
+  playAudio(soundGameOver)
+}
+
+function checkCollision() {}
+function gameLoop() {}
 
 function startGame() {
   playAudio(soundGameStart)
