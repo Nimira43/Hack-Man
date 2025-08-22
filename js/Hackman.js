@@ -29,7 +29,8 @@ class Hackman {
     }
 
     const nextMovePos = this.pos + dir.movement
-    
+    if (objectExist(nextMovePos, objectType.wall)) return
+    this.dir = dir
   }
 }
 
