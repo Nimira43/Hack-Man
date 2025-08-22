@@ -89,6 +89,11 @@ function gameLoop(hackman, ghosts) {
       powerPillTime
     )
   }
+
+  if (hackman.powerPill !== powerPillActive) {
+    powerPillActive = hackman.powerPill
+    ghosts.forEach((ghost) => ghost.isAlerted = hackman.powerPill)
+  }
 }
 
 function startGame() {
