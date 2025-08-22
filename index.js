@@ -78,8 +78,16 @@ function gameLoop(hackman, ghosts) {
   if (gameBoard.objectExist(hackman.pos, objectType.pill)) {
     playAudio(soundPill)
     gameBoard.removeObject(hackman.pos, [objectType.pill])
-    gameBoard.powerPill = true
+    hackman.powerPill = true
     score += 50
+
+    clearTimeout(powerPillTimer)
+    powerPillTimer = setTimeout(
+      () => (
+        hackman.powerPill = false
+      ),
+      powerPillTime
+    )
   }
 }
 
