@@ -24,7 +24,12 @@ class Hackman {
 
     if (e.keyCode >= 37 && e.keyCode <= 40) {
       dir = directions[e.key]
-    } else 
+    } else {
+      return
+    }
+
+    const nextMovePos = this.pos + dir.movement
+    
   }
 }
 
