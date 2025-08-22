@@ -94,6 +94,12 @@ function gameLoop(hackman, ghosts) {
     powerPillActive = hackman.powerPill
     ghosts.forEach((ghost) => ghost.isAlerted = hackman.powerPill)
   }
+
+  if (gameBoard.dotCount === 0) {
+    gameWin = true
+    gameOver(hackman, gameGrid)
+  }
+  scoreTable.innerHTML = score
 }
 
 function startGame() {
