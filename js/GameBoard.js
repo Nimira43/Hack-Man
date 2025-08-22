@@ -59,8 +59,17 @@ class GameBoard {
 
   moveCharacter(character) {
     if (character.shouldMove()) {
-      const { nextMovePos, direction } = character.getNextMove(this.objectExists.bind(this))
-      const { classesToRemove, classesToAdd } = character.makeMove() 
+      const { 
+        nextMovePos, 
+        direction 
+      } = character.getNextMove(
+        this.objectExists.bind(this)
+      )
+      
+      const { 
+        classesToRemove, 
+        classesToAdd 
+      } = character.makeMove() 
 
       if (character.rotation && nextMovePos !== character.pos) {
         this.rotateDiv(nextMovePos, character.dir.rotation)

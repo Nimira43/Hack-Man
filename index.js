@@ -25,10 +25,12 @@ let powerPillTimer = null
 function playAudio(audio) {
   const soundEffect = new Audio(audio)
   soundEffect.play()
+
 }
 
-function gameOver() {
+function gameOver(hackman, grid) {
   playAudio(soundGameOver)
+  document.removeEventListener('keydown', (e) => hackman.handleKeyInput(e, gameBoard.objectExists.bind(gameBoard)))
 }
 
 function checkCollision() {}
