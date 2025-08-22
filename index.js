@@ -32,7 +32,7 @@ function gameOver(hackman, grid) {
   playAudio(soundGameOver)
   document.removeEventListener('keydown', (e) => 
     hackman.handleKeyInput(
-      e, gameBoard.objectExists.bind(gameBoard)
+      e, gameBoard.objectExist.bind(gameBoard)
     )
   )
 
@@ -73,6 +73,10 @@ function startGame() {
   score = 0
   startButton.classList.add('hide')
   gameBoard.createGrid(level)
+
+  const hackman = new Hackman(2, 287)
+  gameBoard.addObject(287, objectType.hackman)
+  document.addEventListener('keydown', (e) => hackman.handleKeyInput(e, gameBoard.objectExist.bind(gameBoard)))
 }
 
 startButton.addEventListener('click', startGame)
