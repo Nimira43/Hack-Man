@@ -60,7 +60,9 @@ class GameBoard {
   moveCharacter(character) {
     if (character.shouldMove()) {
       const { nextMovePos, direction } = character.getNextMove(this.objectExists.bind(this))
+      const { classesToRemove, classesToAdd } = character.makeMove() 
     }
+
   }
 
   static createGameBoard(DOMGrid, level) {
