@@ -36,9 +36,17 @@ class Ghost {
   }
 
   makeMove() {
-    const classesToRemove = [objectType.hackman]
-    const classesToAdd = [objectType.hackman]
+    const classesToRemove = [
+      objectType.ghost,
+      objectType.alerted,
+      this.name
+    ]
+    let classesToAdd = [
+      objectType.ghost,
+      objectType.name
+    ]
 
+    
     return {
       classesToRemove,
       classesToAdd
