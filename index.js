@@ -77,6 +77,13 @@ function startGame() {
   const hackman = new Hackman(2, 287)
   gameBoard.addObject(287, objectType.hackman)
   document.addEventListener('keydown', (e) => hackman.handleKeyInput(e, gameBoard.objectExist.bind(gameBoard)))
+
+  const ghosts = [
+    new Ghost(5, 188, randomMovement, objectType.neville),
+    new Ghost(4, 209, randomMovement, objectType.gertie),
+    new Ghost(3, 230, randomMovement, objectType.brash),
+    new Ghost(2, 251, randomMovement, objectType.frank)
+  ]
 }
 
 startButton.addEventListener('click', startGame)
