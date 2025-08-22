@@ -29,7 +29,7 @@ class GameBoard {
 
     level.forEach((square) => {
       const div = document.createElement('div')
-      div.classList.add('sqaure', classesList[square])
+      div.classList.add('square', classesList[square])
       div.style.cssText = `
         width: ${cellSize}px; height: ${cellSize}px;
       `
@@ -90,3 +90,4 @@ class GameBoard {
 }
 
 export default GameBoard
+

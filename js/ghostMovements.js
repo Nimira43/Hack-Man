@@ -7,7 +7,7 @@ export function randomMovement(position, direction, objectExist) {
 
   while (
     objectExist(nextMovePos, objectType.wall) ||
-    objectExist(nextMovePos, objectType.ghost)
+    objectExist(nextMovePos, objectType.the_ghost)
   ) {
     const key = keys[Math.floor(Math.random() * keys.length)]
     dir = directions[key]

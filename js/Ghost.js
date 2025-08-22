@@ -37,13 +37,13 @@ class Ghost {
 
   makeMove() {
     const classesToRemove = [
-      objectType.ghost,
+      objectType.the_ghost,
       objectType.alerted,
       this.name
     ]
     let classesToAdd = [
-      objectType.ghost,
-      objectType.name
+      objectType.the_ghost,
+      this.name
     ]
 
     if (this.isAlerted) classesToAdd = [

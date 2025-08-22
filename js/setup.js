@@ -33,8 +33,8 @@ export const objectType = {
   brash: 'brash',
   frank: 'frank',
   pill: 'pill',
-  hackman: 'hackman',
-  ghost: 'ghost',
+  the_hackman: 'hackman',
+  the_ghost: 'ghost',
   alerted: 'alerted',
   ghostLair: 'lair'
 }

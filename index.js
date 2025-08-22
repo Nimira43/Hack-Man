@@ -1,3 +1,4 @@
+
 import { level, objectType } from './js/setup'
 import GameBoard from './js/GameBoard'
 import Hackman from './js/Hackman'
@@ -48,14 +49,14 @@ function checkCollision(hackman, ghosts) {
     if (hackman.powerPill) {
       playAudio(soundGhost)
       gameBoard.removeObject(collidedGhost.pos, [
-        objectType.ghost,
+        objectType.the_ghost,
         objectType.alerted,
         collidedGhost.name
       ])
       collidedGhost.pos = collidedGhost.startPos
       score += 100
     } else {
-      gameBoard.removeObject(hackman.pos, [objectType.hackman])
+      gameBoard.removeObject(hackman.pos, [objectType.the_hackman])
       gameBoard.rotateDiv(hackman.pos, 0)
       gameOver(hackman, gameGrid)
     }
@@ -111,7 +112,7 @@ function startGame() {
   gameBoard.createGrid(level)
 
   const hackman = new Hackman(2, 287)
-  gameBoard.addObject(287, objectType.hackman)
+  gameBoard.addObject(287, objectType.the_hackman)
   document.addEventListener('keydown', (e) => hackman.handleKeyInput(e, gameBoard.objectExist.bind(gameBoard)))
 
   const ghosts = [

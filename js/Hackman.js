@@ -36,8 +36,8 @@ class Hackman {
   }
 
   makeMove() {
-    const classesToRemove = [objectType.hackman]
-    const classesToAdd = [objectType.hackman]
+    const classesToRemove = [objectType.the_hackman]
+    const classesToAdd = [objectType.the_hackman]
 
     return {
       classesToRemove,
