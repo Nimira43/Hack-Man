@@ -41,7 +41,11 @@ class GameBoard {
 
   }
 
-  addObject(pos, classes) {}
+  addObject(pos, classes) {
+    this.grid[pos].classList.add(...classes)
+  }
+
+
   removeObject(pos, classes) {}
   
   objectExists(pos, object) {
