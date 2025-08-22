@@ -53,7 +53,10 @@ class GameBoard {
     return this.grid[pos].classList.contains(object)
   }
   
-  rotateDiv(pos, deg) {}
+  rotateDiv(pos, deg) {
+    this.grid[pos].style.transform = `rotate(${deg}deg)`
+  }
+
   moveCharacter(character) {}
 
   static createGameBoard(DOMGrid, level) {
