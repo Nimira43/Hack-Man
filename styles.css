@@ -98,6 +98,19 @@ body {
   border: none;
 }
 
+.ghost::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #000;
+  border-radius: 50%;
+  left: 3px;
+  top: 5px;
+  border: 2px solid #000;
+}
+
 .gertie {
   background-color: #9e6871;
 }
