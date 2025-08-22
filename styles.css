@@ -7,8 +7,8 @@ body {
   height: 100vh;
   width: 100%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.7)),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.85)),
     url('./images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
@@ -28,7 +28,7 @@ body {
 #game {
   position: relative;
   display: inline-grid;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .game-status {
@@ -40,8 +40,8 @@ body {
   justify-content: center;
   width: 100%;
   height: 50px;
-  background: #111;
-  color: #ff4500;
+  background: #ff4500;
+  color: #fffcfa;
   font-size: 1.5rem;
 }
 
@@ -50,9 +50,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 200px;
-  height: 50px;
-  background: #111;
-  color: #ff4500;
+  height: 20px;
+  background: #ff4500;
+  color: #fffcfa;
   margin-top: 20px; 
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .blank {
-  background: rgba(0, 0, 0, 0.2);
+  background: transparent;
 }
 
 .wall {
@@ -77,14 +77,15 @@ body {
 }
 
 .dot {
-  background: #ff8c00;
-  border: 8px solid rgba(0, 0, 0, 0.2);
+  background: white;
+  border: 8px solid black;
   border-radius: 50%;
 }
 
 .pill {
-  background: #87ceeb;
-  border: 8px solid rgba(0, 0, 0, 0.2);
+  background: #ffa500;
+  color: green;
+  border: 5px solid black;
   border-radius: 50%;
 }
 
