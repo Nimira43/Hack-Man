@@ -84,6 +84,8 @@ function startGame() {
     new Ghost(3, 230, randomMovement, objectType.brash),
     new Ghost(2, 251, randomMovement, objectType.frank)
   ]
+
+  timer = setInterval(() => gameLoop(hackman, ghosts), globalSpeed)
 }
 
 startButton.addEventListener('click', startGame)
