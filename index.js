@@ -68,6 +68,10 @@ function gameLoop(hackman, ghosts) {
 
 function startGame() {
   playAudio(startIntro)
+  gameWin = false
+  powerPillActive = false
+  score = 0
+  startButton.classList.add('hide')
   gameBoard.createGrid(level)
 }
 
