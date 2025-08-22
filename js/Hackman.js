@@ -10,11 +10,22 @@ class Hackman {
     this.rotation = true
   }
 
-  shouldMove() {}
+  shouldMove() {
+
+
+  }
+
   getNextMove(objectExist) {}
   makeMove() {}
   setNewPos(nextMovePos) {}
-  handleKeyInput(e, objectExist) {}
+  
+  handleKeyInput(e, objectExist) {
+    let dir
+
+    if (e.keyCode >= 37 && e.keyCode <= 40) {
+      dir = directions[e.key]
+    } else 
+  }
 }
 
 export default Hackman
