@@ -64,6 +64,7 @@ class GameBoard {
 
       if (character.rotation && nextMovePos !== character.pos) {
         this.rotateDiv(nextMovePos, character.dir.rotation)
+        this.rotateDiv(character.pos, 0)
       }
     }
 
