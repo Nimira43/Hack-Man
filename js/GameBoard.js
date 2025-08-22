@@ -33,7 +33,11 @@ class GameBoard {
 
   addObject(pos, classes) {}
   removeObject(pos, classes) {}
-  objectExists(pos, object) {}
+  
+  objectExists(pos, object) {
+    return this.grid[pos].classList.contains(object)
+  }
+  
   rotateDiv(pos, deg) {}
   moveCharacter(character) {}
 
