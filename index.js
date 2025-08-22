@@ -66,6 +66,11 @@ function gameLoop(hackman, ghosts) {
   gameBoard.moveCharacter(hackman)
   checkCollision(hackman, ghosts)
   ghosts.forEach((ghost) => gameBoard.moveCharacter(ghost))
+  checkCollision(hackman, ghosts)
+
+  if (gameBoard.objectExist(hackman.pos, objectType.dot)) {
+    playAudio(soundDot)
+  }
 }
 
 function startGame() {
