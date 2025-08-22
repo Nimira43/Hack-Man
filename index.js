@@ -44,7 +44,7 @@ function gameOver(hackman, grid) {
 function checkCollision(hackman, ghosts) {
   const collidedGhost = ghosts.find((ghost) => hackman.pos === ghost.pos)
 
-  
+  if (collidedGhost) {}
 }
 
 function gameLoop(hackman, ghosts) {
