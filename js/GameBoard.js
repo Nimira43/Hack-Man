@@ -57,7 +57,11 @@ class GameBoard {
     this.grid[pos].style.transform = `rotate(${deg}deg)`
   }
 
-  moveCharacter(character) {}
+  moveCharacter(character) {
+    if (character.shouldMove()) {
+      const { nextMovePos, direction } = character.getNextMove(this.objectExists.bind(this))
+    }
+  }
 
   static createGameBoard(DOMGrid, level) {
     const board = new this(DOMGrid)
