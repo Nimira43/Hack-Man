@@ -23,18 +23,15 @@ class Ghost {
   }
 
   getNextMove(objectExist) {
-    let nextMovePos = this.pos + this.dir.movement
-
-    if ( 
-      objectExist(nextMovePos, objectType.wall) || 
-      objectExist(nextMovePos, objectType.wall) 
-    ) {
-      nextMovePos = this.pos
-    }
+    const {nextMovePos, direction } = this.movement( 
+      this.pos,
+      this.dir,
+      objectExist
+    ) 
 
     return { 
       nextMovePos,
-      direction: this.dir
+      direction
     }
   }
 
