@@ -77,20 +77,25 @@ body {
 }
 
 .dot {
-  background: white;
-  border: 8px solid black;
+  background: #fff;
+  border: 8px solid #000;
   border-radius: 50%;
 }
 
 .pill {
   background: #ffa500;
-  color: green;
-  border: 5px solid black;
+  border: 5px solid #000;
   border-radius: 50%;
 }
 
 .neville {
   background-color: #5b0404;
+}
+
+.ghost {
+  position: relative;
+  border-radius: 10px 10px 2px 2px;
+  border: none;
 }
 
 .gertie {
