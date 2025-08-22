@@ -7,7 +7,17 @@ class GameBoard {
     this.DOMGrid = DOMGrid
   }
 
-  showGameStatus(gameWin) {}
+  showGameStatus(gameWin) {
+    const div = document.createElement('div')
+    div.classList.add('game-status')
+    div.innerHTML = `
+      ${gameWin
+        ? 'You have won'
+        : 'You are dead'
+      }
+    `
+    this.DOMGrid.appendChild(div)
+  }
 
   createGrid(level) {
     this.dotCount = 0
