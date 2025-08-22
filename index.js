@@ -30,11 +30,24 @@ function playAudio(audio) {
 
 function gameOver(hackman, grid) {
   playAudio(soundGameOver)
-  document.removeEventListener('keydown', (e) => hackman.handleKeyInput(e, gameBoard.objectExists.bind(gameBoard)))
+  document.removeEventListener('keydown', (e) => 
+    hackman.handleKeyInput(
+      e, gameBoard.objectExists.bind(gameBoard)
+    )
+  )
+
+  gameBoard.showGameStatus(gameWin)
+  clearInterval(timer)
+  startButton.classList.remove('hide')
 }
 
-function checkCollision() {}
-function gameLoop() {}
+function checkCollision(hackman, ghosts) {
+
+}
+
+function gameLoop(hackman, ghosts) {
+
+}
 
 function startGame() {
   playAudio(startIntro)
