@@ -82,6 +82,12 @@ body {
   border-radius: 50%;
 }
 
+.pill {
+  background: #87ceeb;
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
 .neville {
   background-color: #5b0404;
 }
