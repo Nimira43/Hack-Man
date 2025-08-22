@@ -46,6 +46,10 @@ class Ghost {
       objectType.name
     ]
 
+    if (this.isAlerted) classesToAdd = [
+      classesToAdd,
+      objectType.alerted
+    ]
     
     return {
       classesToRemove,
