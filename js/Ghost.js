@@ -50,7 +50,7 @@ class Ghost {
       classesToAdd,
       objectType.alerted
     ]
-    
+
     return {
       classesToRemove,
       classesToAdd
@@ -59,6 +59,7 @@ class Ghost {
 
   setNewPos(nextMovePos, direction) {
     this.pos = nextMovePos
+    this.dir = direction
   }
 }
 
