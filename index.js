@@ -52,6 +52,10 @@ function checkCollision(hackman, ghosts) {
         objectType.alerted,
         collidedGhost.name
       ])
+      collidedGhost.pos = collidedGhost.startPos
+      score += 100
+    } else {
+      
     }
   }
 }
