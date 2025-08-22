@@ -45,8 +45,9 @@ class Hackman {
     }
   }
 
-
-  setNewPos(nextMovePos) {}
+  setNewPos(nextMovePos) {
+    thhis.pos = nextMovePos
+  }
   
   handleKeyInput(e, objectExist) {
     let dir
