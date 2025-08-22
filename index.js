@@ -1,3 +1,4 @@
+// import './styles.css'
 
 import { level, objectType } from './js/setup'
 import GameBoard from './js/GameBoard'
