@@ -28,6 +28,11 @@ class Hackman {
     ) {
       nextMovePos = this.pos
     }
+
+    return { 
+      nextMovePos,
+      direction: this.dir
+    }
   }
 
   makeMove() {}
