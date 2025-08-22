@@ -46,7 +46,7 @@ class Hackman {
   }
 
   setNewPos(nextMovePos) {
-    thhis.pos = nextMovePos
+    this.pos = nextMovePos
   }
   
   handleKeyInput(e, objectExist) {
