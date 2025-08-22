@@ -35,7 +35,17 @@ class Hackman {
     }
   }
 
-  makeMove() {}
+  makeMove() {
+    const classesToRemove = [objectType.hackman]
+    const classesToAdd = [objectType.hackman]
+
+    return {
+      classesToRemove,
+      classesToAdd
+    }
+  }
+
+
   setNewPos(nextMovePos) {}
   
   handleKeyInput(e, objectExist) {
