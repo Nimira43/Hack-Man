@@ -66,8 +66,11 @@ class GameBoard {
         this.rotateDiv(nextMovePos, character.dir.rotation)
         this.rotateDiv(character.pos, 0)
       }
-    }
 
+      this.removeObject(character.pos, classesToRemove)
+      this.addObject(nextMovePos, classesToAdd)
+      character.setNewPos(nextMovePos, direction)
+    }
   }
 
   static createGameBoard(DOMGrid, level) {
