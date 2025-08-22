@@ -63,7 +63,9 @@ function checkCollision(hackman, ghosts) {
 }
 
 function gameLoop(hackman, ghosts) {
-
+  gameBoard.moveCharacter(hackman)
+  checkCollision(hackman, ghosts)
+  ghosts.forEach((ghost) => gameBoard.moveCharacter(ghost))
 }
 
 function startGame() {
