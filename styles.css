@@ -56,6 +56,14 @@ body {
   margin-top: 20px; 
 }
 
+#start-button {
+  margin-top: 20px
+}
+
+.hide {
+  display: none;
+}
+
 .square {
   display: block;
 }
