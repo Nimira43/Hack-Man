@@ -55,7 +55,9 @@ function checkCollision(hackman, ghosts) {
       collidedGhost.pos = collidedGhost.startPos
       score += 100
     } else {
-      
+      gameBoard.removeObject(hackman.pos, [objectType.hackman])
+      gameBoard.rotateDiv(hackman.pos, 0)
+      gameOver(hackman, gameGrid)
     }
   }
 }
