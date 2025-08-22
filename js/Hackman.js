@@ -19,7 +19,17 @@ class Hackman {
     this.timer++
   }
 
-  getNextMove(objectExist) {}
+  getNextMove(objectExist) {
+    let nextMovePos = this.pos + this.dir.movement
+
+    if ( 
+      objectExist(nextMovePos, objectType.wall) || 
+      objectExist(nextMovePos, objectType.wall) 
+    ) {
+      nextMovePos = this.pos
+    }
+  }
+
   makeMove() {}
   setNewPos(nextMovePos) {}
   
