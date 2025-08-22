@@ -70,6 +70,9 @@ function gameLoop(hackman, ghosts) {
 
   if (gameBoard.objectExist(hackman.pos, objectType.dot)) {
     playAudio(soundDot)
+    gameBoard.removeObject(hackman.pos, [objectType.dot])
+    gameBoard.dotCount--
+    score += 10
   }
 }
 
